@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "study",
     "account",
+    "ckeditor",
+    "crispy_forms",
 ]
 
 MIDDLEWARE = [
@@ -123,3 +125,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+# ! MEDİA
+MEDİA_URL = '/media/'
+MEDİA_ROOT = os.path.join(BASE_DIR,"media/")
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
